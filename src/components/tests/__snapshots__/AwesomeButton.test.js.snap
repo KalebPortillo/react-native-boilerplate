@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AwesomeButton> Structure renders correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "darkmagenta",
+        "flex": 1,
+        "maxHeight": 40,
+        "padding": 8,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "Arial",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+        undefined,
+      ]
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external container style from ID 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "darkmagenta",
+        "flex": 1,
+        "maxHeight": 40,
+        "padding": 8,
+      },
+      Object {
+        "padding": 4,
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "Arial",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+        undefined,
+      ]
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external container style from array 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "darkmagenta",
+        "flex": 1,
+        "maxHeight": 40,
+        "padding": 8,
+      },
+      Array [
+        Object {
+          "backgroundColor": "yellow",
+        },
+        Object {
+          "maxHeight": 32,
+        },
+      ],
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "Arial",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+        undefined,
+      ]
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external container style from object 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "darkmagenta",
+        "flex": 1,
+        "maxHeight": 40,
+        "padding": 8,
+      },
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "Arial",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+        undefined,
+      ]
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external text style from ID 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "darkmagenta",
+        "flex": 1,
+        "maxHeight": 40,
+        "padding": 8,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "Arial",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+        Object {
+          "fontSize": 12,
+        },
+      ]
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external text style from array 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "darkmagenta",
+        "flex": 1,
+        "maxHeight": 40,
+        "padding": 8,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "Arial",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+        Array [
+          Object {
+            "color": "blue",
+          },
+          Object {
+            "fontFamily": "sans-serif",
+          },
+        ],
+      ]
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external text style from object 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "darkmagenta",
+        "flex": 1,
+        "maxHeight": 40,
+        "padding": 8,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "Arial",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "black",
+        },
+      ]
+    }
+  />
+</TouchableOpacity>
+`;
