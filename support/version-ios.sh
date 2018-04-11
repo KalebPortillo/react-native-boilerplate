@@ -2,7 +2,8 @@
 
 # adapted from: https://medium.com/@andr3wjack/versioning-react-native-apps-407469707661
 
-PROJECT_DIR="ios/SoPalavra"
+APP_NAME=$(cat package.json | grep name | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+PROJECT_DIR="ios/${APP_NAME}"
 INFOPLIST_FILE="Info.plist"
 INFOPLIST_DIR="${PROJECT_DIR}/${INFOPLIST_FILE}"
 
