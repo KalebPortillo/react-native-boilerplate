@@ -3,6 +3,7 @@ import { Platform, StyleSheet, Text, View, Image } from 'react-native'
 
 import { AwesomeButton } from 'components/index'
 import { Colors, Metrics, Fonts, Strings, Media, AppStyles } from 'theme/index'
+import Config from 'react-native-config'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n Cmd+D or shake for dev menu',
@@ -19,7 +20,8 @@ export default (props: Props) => (
     <Text style={styles.welcome}>Welcome to React Native!</Text>
     <Text style={styles.instructions}>To get started, edit App.js</Text>
     <Text style={styles.instructions}>{instructions}</Text>
-    <AwesomeButton text={Strings.common.button} onPress={() => props.navigation.push('Home')} />
+    <Text style={styles.instructions}>{`${Config.API_URL} / ${Config.GOOGLE_MAPS_API_KEY}`}</Text>
+    <AwesomeButton text={Strings.common.button} onPress={() => props.navigation.push('Counter')} />
   </View>
 )
 

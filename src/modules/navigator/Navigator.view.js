@@ -1,7 +1,7 @@
 import { StackNavigator } from 'react-navigation'
 import { Easing, Animated } from 'react-native'
 
-import Welcome from 'modules/welcome/Welcome.view'
+import Home from 'modules/home/Home.view'
 import Counter from 'modules/counter/Counter.container'
 
 const transitionConfig = () => {
@@ -31,8 +31,8 @@ const transitionConfig = () => {
 // Root navigator is a StackNavigator
 const Navigator = StackNavigator(
   {
-    Welcome: { screen: Welcome },
-    Home: { screen: Counter }
+    Home: { screen: Home },
+    Counter: { screen: Counter }
   },
   {
     headerMode: 'none',
