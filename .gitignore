@@ -51,3 +51,4 @@ buck-out/
 */fastlane/screenshots
 /.env
 /.env.staging
+/.env.production
