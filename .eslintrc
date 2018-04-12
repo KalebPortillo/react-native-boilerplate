@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": ["airbnb", "prettier"],
   "plugins": [
     "react",
     "flowtype",
@@ -35,5 +35,10 @@
     "import/resolver": {
       "babel-module": {}
     }
+  },
+  "globals": {
+    "it": true,
+    "expect": true,
+    "describe": true
   }
 }

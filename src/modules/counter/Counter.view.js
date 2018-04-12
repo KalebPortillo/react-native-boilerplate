@@ -46,7 +46,7 @@ class CounterView extends Component<Props> {
         </TouchableOpacity>
 
         <TouchableOpacity onPress={this.bored}>
-          <Text style={styles.linkButton}>{'I\'m bored!'}</Text>
+          <Text style={styles.linkButton}>{"I'm bored!"}</Text>
         </TouchableOpacity>
       </View>
     )

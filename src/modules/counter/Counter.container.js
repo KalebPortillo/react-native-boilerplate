@@ -4,7 +4,7 @@ import CounterScene from './Counter.view'
 import * as CounterActions from './Counter.state'
 
 export default connect(
-  (state) => {
+  state => {
     const { counter } = state
     return {
       counter: counter.value,

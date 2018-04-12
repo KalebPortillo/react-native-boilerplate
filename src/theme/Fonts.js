@@ -2,7 +2,7 @@ import { Platform } from 'react-native'
 
 const type = {
   opensans: Platform.select({ android: 'opensans-regular', ios: 'Open Sans' }),
-  raleway: Platform.select({ android: 'raleway-regular', ios: 'Raleway' }),
+  raleway: Platform.select({ android: 'raleway-regular', ios: 'Raleway' })
 }
 
 const size = {

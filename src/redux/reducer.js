@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux'
+import { combineReducers } from 'redux'
 import CounterReducer from 'modules/counter/Counter.state'
 // ## Generator Reducer Imports
 
