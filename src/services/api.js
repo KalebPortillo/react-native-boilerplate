@@ -1,13 +1,9 @@
 // a library to wrap and simplify api calls
 import apisauce from 'apisauce'
-
-const env = {
-  DEV: 'https://dev-api.github.com/',
-  PROD: 'https://api.github.com/'
-}
+import Config from 'react-native-config'
 
 // our "constructor"
-const create = (baseURL = env.PROD) => {
+const create = (baseURL = Config.API_URL) => {
   // ------
   // STEP 1
   // ------

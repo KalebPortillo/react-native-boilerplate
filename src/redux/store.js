@@ -2,12 +2,19 @@
 
 import { applyMiddleware, createStore, compose } from 'redux'
 import thunkMiddleware from 'redux-thunk'
+import { createReactNavigationReduxMiddleware } from 'react-navigation-redux-helpers'
 
 // import logger from 'redux-logger' // Pass this middleware if you want to log actions on console
 
 import reducer from './reducer'
 
-const enhancers = [applyMiddleware(thunkMiddleware)]
+// Configure listener
+const navigatorMiddleware = createReactNavigationReduxMiddleware(
+  'root',
+  state => state.navigation // <-- make sure this is where your nav state lives (i.e. if your redux state is at `state.nav` use state => state.nav instead)
+)
+
+const enhancers = [applyMiddleware(thunkMiddleware, navigatorMiddleware)]
 
 /* Enable redux dev tools only in development.
  * We suggest using the standalone React Native Debugger extension:

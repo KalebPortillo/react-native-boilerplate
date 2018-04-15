@@ -10,7 +10,8 @@
         "modules": "./src/modules/",
         "utils": "./src/utils",
         "services": "./src/services",
-        "theme": "./src/theme"
+        "theme": "./src/theme",
+        "@redux": "./src/redux"
       }
     }]
   ]

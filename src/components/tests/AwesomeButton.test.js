@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { shallow } from 'enzyme'
-import { noop, sampleText } from '../../utils/test-helpers'
 import AwesomeButton from '../AwesomeButton'
 
 describe('<AwesomeButton>', () => {
-  const Component = <AwesomeButton text={sampleText} onPress={noop} />
+  const sampleText = 'test'
+  const Component = <AwesomeButton text={sampleText} onPress={() => {}} />
 
   describe('Structure', () => {
     it('renders correctly', () => {
@@ -94,9 +94,9 @@ describe('<AwesomeButton>', () => {
     })
 
     it('renders text inside button', () => {
-      const Clone = React.cloneElement(Component, { text: 'opa' })
+      const Clone = React.cloneElement(Component, { text: sampleText })
       const wrapper = shallow(Clone)
-      expect('opa').toMatchSnapshot(wrapper)
+      expect(sampleText).toMatchSnapshot(wrapper)
     })
   })
 })
