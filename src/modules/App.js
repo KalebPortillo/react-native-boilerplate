@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-import { View, StatusBar } from 'react-native'
+import { StatusBar, ActivityIndicator } from 'react-native'
 import { Provider } from 'react-redux'
+import { PersistGate } from 'redux-persist/es/integration/react'
 
 import SplashScreen from 'react-native-splash-screen'
 
 import { Colors } from 'theme'
+import { Loader } from 'components'
 
-import store from '../redux/store'
+import configureStore from '../redux/store'
 import Navigator from '../modules/navigator/Navigator.container'
 
 export default class App extends Component {
@@ -15,12 +17,13 @@ export default class App extends Component {
   }
 
   render() {
+    const { store, persistor } = configureStore()
     return (
       <Provider store={store}>
-        <View style={{ flex: 1 }}>
+        <PersistGate persistor={persistor} loading={<Loader />}>
           <StatusBar backgroundColor={Colors.transparent} barStyle="light-content" translucent />
           <Navigator />
-        </View>
+        </PersistGate>
       </Provider>
     )
   }
