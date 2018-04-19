@@ -48,7 +48,7 @@ To build your own app on top of the Boilerplate, fork or mirror this repository.
 
 First, give your application a name by running `./support/rename.sh YourAppName`.
 
-Once you have the code downloaded, follow the **[Setup guide](docs/SETUP.md)** to get started.
+Of course, you will need node, npm, yarn(prefereb), Android Studio, Xcode, React Native CLI, and all these basic stuff setup in your machine
 
 ## Development workflow
 
@@ -87,8 +87,7 @@ $ yarn coverage
 $ yarn version
 ```
 
-Read the **[Testing guide](docs/TESTING.md)** for more information about writing tests.
-
+For more awesome **yarn** commands, refer to [package.json](package.json) scripts section
 
 ## Debugging
 
