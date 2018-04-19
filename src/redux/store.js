@@ -16,7 +16,6 @@ const navigatorMiddleware = createReactNavigationReduxMiddleware(
 )
 
 const enhancers = [applyMiddleware(thunkMiddleware, navigatorMiddleware)]
-
 /* Enable redux dev tools only in development.
  * We suggest using the standalone React Native Debugger extension:
  * https://github.com/jhen0409/react-native-debugger
@@ -24,7 +23,6 @@ const enhancers = [applyMiddleware(thunkMiddleware, navigatorMiddleware)]
 const composeEnhancers =
   (__DEV__ && typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
   compose
-
 const enhancer = composeEnhancers(...enhancers)
 
 const persistConfig = {
@@ -32,11 +30,10 @@ const persistConfig = {
   storage: AsyncStorage
 }
 
+console.log('STORE')
 const persistedReducer = persistReducer(persistConfig, rootReducer)
-
 let store = createStore(persistedReducer, enhancer)
 let persistor = persistStore(store)
-
 // if (__DEV__) persistor.purge() // Comment this line if you want persisted store on dev
 
 if (module.hot) {

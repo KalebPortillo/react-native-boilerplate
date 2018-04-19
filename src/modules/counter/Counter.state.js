@@ -1,3 +1,5 @@
+import { createSelector } from 'reselect'
+
 // Initial state
 const initialState = {
   value: 0,
@@ -36,7 +38,7 @@ export async function requestRandomNumber() {
 export default function CounterReducer(state = initialState, action = {}) {
   switch (action.type) {
     case INCREMENT:
-      return { ...state, value: state.value + 1 }
+      return { ...state, value: state.value + 2 }
 
     case RESET:
       return initialState
@@ -51,3 +53,8 @@ export default function CounterReducer(state = initialState, action = {}) {
       return state
   }
 }
+
+// Selectors
+const getValue = state => state.counter.value
+
+export const valueSelector = createSelector([getValue], value => value)

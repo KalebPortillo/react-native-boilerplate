@@ -1,5 +1,17 @@
+import React from 'react'
 import { AppRegistry } from 'react-native'
+import { Provider } from 'react-redux'
 
-import App from 'modules/App'
+import configureStore from './src/redux/store'
 
-AppRegistry.registerComponent('boilerplate', () => App)
+import App from './src/modules/App'
+
+const { store, persistor } = configureStore()
+
+const Main = () => (
+  <Provider store={store}>
+    <App persistor={persistor} />
+  </Provider>
+)
+
+AppRegistry.registerComponent('boilerplate', () => Main)
