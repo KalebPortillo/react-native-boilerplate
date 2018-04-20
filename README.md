@@ -55,8 +55,6 @@ Of course, you will need node, npm, yarn(prefereb), Android Studio, Xcode, React
 
 After you have set up the project using above instructions, you can use your favorite IDE or text editor to write code, and run the application from the command line. Turn on React Native hot module reloading in the app developer menu to update your application as you code.
 
-To learn how to structure your application and use the Redux application architecture, read the **[Architecture guide](docs/ARCHITECTURE.md)** for more details.
-
 ##### Start the application in iOS simulator
 ```
 $ yarn ios
