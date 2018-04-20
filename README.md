@@ -13,7 +13,7 @@ Getting started on a new app just takes too long, though. Most apps need the sam
 Sounds good and you just want to see how it works? Here is a quick start guide:
 
 ```
-git clone https://github.com/futurice/pepperoni-app-kit.git
+git clone git@github.com:KalebPortillo/react-native-boilerplate.git
 cd react-native-boilerplate
 yarn install
 yarn run ios
@@ -35,6 +35,7 @@ For further setup instructions please see our [Getting Started](#getting-started
 * [React Native Config](https://github.com/luggit/react-native-config) Multi-environment configuration (dev, staging, production) for iOS and Android
 * Automagically update project version in both Android and iOS when running npm version command
 * [Prettier](https://prettier.io/) for consistant code format
+* Custom splash screen ready, just change the image asset
 
 ### Testing Setup
 
