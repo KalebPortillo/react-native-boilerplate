@@ -27,14 +27,14 @@ For further setup instructions please see our [Getting Started](#getting-started
 
 * Always up-to-date [React Native](https://facebook.github.io/react-native/) scaffolding
 * Modular and well-documented structure for application code
-* [Redux](http://redux.js.org/) for state management
+* [Redux](http://redux.js.org/) with [Ducks](https://github.com/erikras/ducks-modular-redux) proposal for state management
+* [Reselect](http://redux.js.org/) for compute devided data
 * [React Navigation](https://reactnavigation.org/) for awesome navigation with 60fps transitions
-* Disk-persisted application state caching for offline support and snappy startup performance
-* Clean and testable service layer for interacting with RESTful APIs
+* [Redux Persist](https://github.com/rt2zz/redux-persist) Disk-persisted application state caching for offline support and snappy startup performance
 * Sample app to show how to wire it all together
-* Multi-environment configuration (dev, staging, production) for iOS and Android
+* [React Native Config](https://github.com/luggit/react-native-config) Multi-environment configuration (dev, staging, production) for iOS and Android
 * Automagically update project version in both Android and iOS when running npm version command
-* Prettier for consistant code format
+* [Prettier](https://prettier.io/) for consistant code format
 
 ### Testing Setup
 
