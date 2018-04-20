@@ -4,11 +4,11 @@ React Native Boilerplate
 [![React Native](https://img.shields.io/badge/react%20native-0.55.2-brightgreen.svg)](https://github.com/facebook/react-native)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/futurice/pepperoni-app-kit/blob/master/LICENSE)
 
-We :green_heart: building apps with React Native, because it helps us create high quality products for both major mobile platforms quickly and cost-effectively.
+Building apps with React Native is great, because it helps create high quality products for both major mobile platforms quickly and cost-effectively.
 
-Getting started on a new app just takes too long, though. Most apps need the same basic building blocks and developer infrastructure, and we are bored of reinventing the wheel time and time again.
+Getting started on a new app just takes too long, though. Most apps need the same basic building blocks and developer infrastructure, and most of us are bored of reinventing the wheel time and time again.
 
-## TLDR;
+## tldr;
 
 Sounds good and you just want to see how it works? Here is a quick start guide:
 
