@@ -49,6 +49,8 @@ To build your own app on top of the Boilerplate, fork or mirror this repository.
 
 First, give your application a name by running `./support/rename.sh YourAppName`.
 
+If you dont't want to rename de package name by hand, you can use [react-native-rename](https://github.com/junedomingo/react-native-rename)
+
 Of course, you will need node, npm, yarn(prefereb), Android Studio, Xcode, React Native CLI, and all these basic stuff setup in your machine
 
 ## Development workflow
