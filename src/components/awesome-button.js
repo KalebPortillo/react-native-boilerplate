@@ -4,9 +4,9 @@ import { Colors, Metrics, Fonts, AppStyles } from 'theme'
 
 type Props = {
   onPress: Function,
+  text: string,
   style?: number | Object | Array<number>,
-  textStyle?: number | Object | Array<number>,
-  text: string
+  textStyle?: number | Object | Array<number>
 }
 
 export default function AwesomeButton(props: Props) {

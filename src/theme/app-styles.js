@@ -55,6 +55,11 @@ export default {
     borderRadius: Metrics.buttonRadius,
     borderColor: Colors.fire
   },
+  roundBorder: {
+    borderWidth: Metrics.buttonBorder,
+    borderRadius: Metrics.section,
+    borderColor: Colors.fire
+  },
   darkLabelContainer: {
     padding: Metrics.smallMargin,
     paddingBottom: Metrics.doubleBaseMargin,
