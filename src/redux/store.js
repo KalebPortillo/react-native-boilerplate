@@ -30,7 +30,6 @@ const persistConfig = {
   storage: AsyncStorage
 }
 
-console.log('STORE')
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 let store = createStore(persistedReducer, enhancer)
 let persistor = persistStore(store)
