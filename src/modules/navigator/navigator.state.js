@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { NavigationActions } from 'react-navigation'
-import Navigator from './Navigator'
+import Navigator from './navigator'
 
 const initialAction = { type: NavigationActions.Init }
 const initialState = Navigator.router.getStateForAction(initialAction)

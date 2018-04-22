@@ -8,7 +8,7 @@ import { Colors } from 'theme'
 import { Loader } from 'components'
 
 // import configureStore from '../redux/store'
-import Navigator from '../modules/navigator/Navigator.container'
+import Navigator from './navigator/navigator.container'
 
 // const { store, persistor } = configureStore()
 type Props = {

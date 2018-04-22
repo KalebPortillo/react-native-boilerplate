@@ -2,7 +2,7 @@ import React from 'react'
 import { addNavigationHelpers } from 'react-navigation'
 import { createReduxBoundAddListener } from 'react-navigation-redux-helpers'
 
-import Navigator from './Navigator'
+import Navigator from './navigator'
 
 const addListener = createReduxBoundAddListener('root')
 

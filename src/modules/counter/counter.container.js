@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import CounterScene from './Counter.view'
-import * as CounterState from './Counter.state'
+import CounterScene from './counter.view'
+import * as CounterState from './counter.state'
 
 export default connect(
   state => {

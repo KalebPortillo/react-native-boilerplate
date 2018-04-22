@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { shallow } from 'enzyme'
-import AwesomeButton from '../AwesomeButton'
+import AwesomeButton from '../awesome-button'
 
 describe('<AwesomeButton>', () => {
   const sampleText = 'test'

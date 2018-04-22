@@ -1,2 +1,2 @@
-export { default as AwesomeButton } from './AwesomeButton'
-export { default as Loader } from './Loader'
+export { default as AwesomeButton } from './awesome-button'
+export { default as Loader } from './loader'

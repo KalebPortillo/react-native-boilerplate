@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import NavigatorView from './Navigator.view'
+import NavigatorView from './navigator.view'
 
 export default connect(state => {
   const { navigation } = state

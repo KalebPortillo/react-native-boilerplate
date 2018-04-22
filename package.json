@@ -23,10 +23,9 @@
     "android:prod": "ENVFILE=.env.production react-native run-android",
     "android:release": "ENVFILE=.env.staging react-native run-android --variant=release",
     "android:release:prod": "ENVFILE=.env.production react-native run-android --variant=release",
-    "preversion": "yarn precommit",
+    "preversion": "lint-staged && yarn test",
     "version": "support/version-ios.sh",
-    "pretty": "prettier --no-semi false --print-width 100 --single-quote --trailing-comma none --write \"src/**/*.js\"",
-    "precommit": "lint-staged && yarn test"
+    "pretty": "prettier --no-semi false --print-width 100 --single-quote --trailing-comma none --write \"src/**/*.js\""
   },
   "dependencies": {
     "apisauce": "^0.14.3",
@@ -84,6 +83,12 @@
       "yarn pretty",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn test",
+      "pre-push": "lint-staged && yarn test"
+    }
   },
   "rnpm": {
     "assets": [
