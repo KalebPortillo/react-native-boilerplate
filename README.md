@@ -1,7 +1,7 @@
 React Native Boilerplate
 ===
 
-[![React Native](https://img.shields.io/badge/react%20native-0.55.2-brightgreen.svg)](https://github.com/facebook/react-native)
+[![React Native](https://img.shields.io/badge/react%20native-0.57.1-brightgreen.svg)](https://github.com/facebook/react-native)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/KalebPortillo/react-native-boilerplate/blob/master/LICENSE)
 
 Building apps with React Native is great, because it helps create high quality products for both major mobile platforms quickly and cost-effectively.

@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AwesomeButton> Functionality renders text inside button 1`] = `
+Object {
+  "0": "t",
+  "1": "e",
+  "2": "s",
+  "3": "t",
+}
+`;
+
+exports[`<AwesomeButton> Structure renders correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#e73536",
+        "borderRadius": 5,
+        "borderWidth": 2,
+        "flex": 1,
+        "justifyContent": "center",
+        "maxHeight": 50,
+        "padding": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <ForwardRef(Text)
+    style={
+      Array [
+        Object {
+          "color": "#fb5f26",
+          "fontFamily": "Open Sans",
+          "fontSize": 17,
+        },
+        undefined,
+      ]
+    }
+  >
+    TEST
+  </ForwardRef(Text)>
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external container style from ID 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#e73536",
+        "borderRadius": 5,
+        "borderWidth": 2,
+        "flex": 1,
+        "justifyContent": "center",
+        "maxHeight": 50,
+        "padding": 10,
+      },
+      Object {
+        "padding": 4,
+      },
+    ]
+  }
+>
+  <ForwardRef(Text)
+    style={
+      Array [
+        Object {
+          "color": "#fb5f26",
+          "fontFamily": "Open Sans",
+          "fontSize": 17,
+        },
+        undefined,
+      ]
+    }
+  >
+    TEST
+  </ForwardRef(Text)>
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external container style from array 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#e73536",
+        "borderRadius": 5,
+        "borderWidth": 2,
+        "flex": 1,
+        "justifyContent": "center",
+        "maxHeight": 50,
+        "padding": 10,
+      },
+      Array [
+        Object {
+          "backgroundColor": "yellow",
+        },
+        Object {
+          "maxHeight": 32,
+        },
+      ],
+    ]
+  }
+>
+  <ForwardRef(Text)
+    style={
+      Array [
+        Object {
+          "color": "#fb5f26",
+          "fontFamily": "Open Sans",
+          "fontSize": 17,
+        },
+        undefined,
+      ]
+    }
+  >
+    TEST
+  </ForwardRef(Text)>
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external container style from object 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#e73536",
+        "borderRadius": 5,
+        "borderWidth": 2,
+        "flex": 1,
+        "justifyContent": "center",
+        "maxHeight": 50,
+        "padding": 10,
+      },
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <ForwardRef(Text)
+    style={
+      Array [
+        Object {
+          "color": "#fb5f26",
+          "fontFamily": "Open Sans",
+          "fontSize": 17,
+        },
+        undefined,
+      ]
+    }
+  >
+    TEST
+  </ForwardRef(Text)>
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external text style from ID 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#e73536",
+        "borderRadius": 5,
+        "borderWidth": 2,
+        "flex": 1,
+        "justifyContent": "center",
+        "maxHeight": 50,
+        "padding": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <ForwardRef(Text)
+    style={
+      Array [
+        Object {
+          "color": "#fb5f26",
+          "fontFamily": "Open Sans",
+          "fontSize": 17,
+        },
+        Object {
+          "fontSize": 12,
+        },
+      ]
+    }
+  >
+    TEST
+  </ForwardRef(Text)>
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external text style from array 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#e73536",
+        "borderRadius": 5,
+        "borderWidth": 2,
+        "flex": 1,
+        "justifyContent": "center",
+        "maxHeight": 50,
+        "padding": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <ForwardRef(Text)
+    style={
+      Array [
+        Object {
+          "color": "#fb5f26",
+          "fontFamily": "Open Sans",
+          "fontSize": 17,
+        },
+        Array [
+          Object {
+            "color": "blue",
+          },
+          Object {
+            "fontFamily": "sans-serif",
+          },
+        ],
+      ]
+    }
+  >
+    TEST
+  </ForwardRef(Text)>
+</TouchableOpacity>
+`;
+
+exports[`<AwesomeButton> Structure renders external text style from object 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#e73536",
+        "borderRadius": 5,
+        "borderWidth": 2,
+        "flex": 1,
+        "justifyContent": "center",
+        "maxHeight": 50,
+        "padding": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <ForwardRef(Text)
+    style={
+      Array [
+        Object {
+          "color": "#fb5f26",
+          "fontFamily": "Open Sans",
+          "fontSize": 17,
+        },
+        Object {
+          "color": "black",
+        },
+      ]
+    }
+  >
+    TEST
+  </ForwardRef(Text)>
+</TouchableOpacity>
+`;

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm cache clean --force",
-    "newclear": "rm -rf $TMPDIR/react-* && watchman watch-del-all && rm -rf ios/build && rm -rf node_modules/ && npm cache clean --force && yarn install",
+    "newclear": "rm -rf rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/haste-* && watchman watch-del-all && rm -rf ios/build && rm -rf node_modules/ && npm cache clean --force && yarn install",
     "test": "node node_modules/jest/bin/jest.js",
     "test:watch": "jest --watch",
     "updateSnapshot": "jest --updateSnapshot",
@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "apisauce": "^0.14.3",
-    "react": "^16.3.1",
-    "react-native": "0.55.2",
+    "react": "^16.5.2",
+    "react-native": "^0.57.1",
     "react-native-config": "^0.11.5",
     "react-native-splash-screen": "^3.0.6",
     "react-navigation": "^1.5.11",
@@ -43,14 +43,17 @@
     "reselect": "^3.0.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/runtime": "^7.1.2",
+    "babel-core": "^7.0.0-beta.47",
     "babel-eslint": "^8.2.2",
-    "babel-jest": "22.4.3",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-jest-hoist": "^23.2.0",
     "babel-plugin-module-resolver": "^3.1.1",
-    "babel-preset-react-native": "4.0.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -59,15 +62,20 @@
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "husky": "^1.0.0-rc.1",
-    "jest": "22.4.3",
+    "husky": "^1.1.0",
+    "jest": "23.6.0",
     "lint-staged": "^7.0.4",
+    "metro-react-native-babel-preset": "^0.47.0",
     "prettier": "^1.11.1",
-    "react-dom": "^16.3.1",
-    "react-test-renderer": "^16.3.0-alpha.1"
+    "react-dom": "^16.5.2",
+    "react-test-renderer": "^16.5.2",
+    "schedule": "0.4.0"
   },
   "jest": {
     "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    },
     "testMatch": [
       "**/?(*.)test.js?(x)"
     ],
@@ -93,6 +101,33 @@
   "rnpm": {
     "assets": [
       "./src/assets/fonts/"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "module:metro-react-native-babel-preset"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "jest-hoist",
+      [
+        "module-resolver",
+        {
+          "root": [
+            "./"
+          ],
+          "alias": {
+            "src": "./src",
+            "assets": "./src/assets",
+            "components": "./src/components/",
+            "modules": "./src/modules/",
+            "utils": "./src/utils",
+            "services": "./src/services",
+            "theme": "./src/theme",
+            "@redux": "./src/redux"
+          }
+        }
+      ]
     ]
   }
 }
