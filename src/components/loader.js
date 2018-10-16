@@ -1,6 +1,6 @@
 import React from 'react'
 import { ActivityIndicator, StyleSheet, View } from 'react-native'
-import { Colors, AppStyles } from 'theme'
+import { Colors, AppStyles } from '../theme'
 
 type Props = {
   color?: string,

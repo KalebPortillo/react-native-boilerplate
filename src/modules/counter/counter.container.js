@@ -1,17 +1,27 @@
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import CounterScene from './counter.view'
-import * as CounterState from './counter.state'
+import Counter from './counter.view'
+import {
+  valueSelector,
+  selectLoading,
+  increment,
+  random,
+  requestRandomNumber,
+  reset
+} from './counter.state'
+
+const mapStateToProps = state => ({
+  counter: valueSelector(state),
+  loading: selectLoading(state)
+})
+
+const mapActionsToProps = {
+  increment,
+  random,
+  requestRandomNumber,
+  reset
+}
 
 export default connect(
-  state => {
-    const { counter } = state
-    return {
-      counter: CounterState.valueSelector(state),
-      loading: counter.loading
-    }
-  },
-  dispatch => ({
-    counterActions: bindActionCreators(CounterState, dispatch)
-  })
-)(CounterScene)
+  mapStateToProps,
+  mapActionsToProps
+)(Counter)

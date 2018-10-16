@@ -1,21 +1,22 @@
 import React, { Component } from 'react'
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native'
 
-import { AppStyles, Colors, Fonts, Metrics, Strings } from 'theme'
-import { AwesomeButton } from 'components'
+import { AppStyles, Colors, Fonts, Metrics } from '../../theme'
+import { AwesomeButton } from '../../components'
 
 type Props = {
   navigation: Object,
-  counterActions: Function,
+  increment: Function,
+  reset: Function,
   counter: number
 }
 class CounterView extends Component<Props> {
   increment = () => {
-    this.props.counterActions.increment()
+    this.props.increment()
   }
 
   reset = () => {
-    this.props.counterActions.reset()
+    this.props.reset()
   }
 
   bored = () => {

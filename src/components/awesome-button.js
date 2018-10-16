@@ -1,6 +1,6 @@
 import React from 'react'
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
-import { Colors, Metrics, Fonts, AppStyles } from 'theme'
+import { Colors, Metrics, Fonts, AppStyles } from '../theme'
 
 type Props = {
   onPress: Function,

@@ -33,7 +33,7 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 let store = createStore(persistedReducer, enhancer)
 let persistor = persistStore(store)
-// if (__DEV__) persistor.purge() // Comment this line if you want persisted store on dev
+if (__DEV__) persistor.purge() // Comment this line if you want persisted store on dev
 
 if (module.hot) {
   module.hot.accept(() => {

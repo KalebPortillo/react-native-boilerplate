@@ -4,8 +4,8 @@ import { PersistGate } from 'redux-persist/es/integration/react'
 
 import SplashScreen from 'react-native-splash-screen'
 
-import { Colors } from 'theme'
-import { Loader } from 'components'
+import { Colors } from '../theme'
+import { Loader } from '../components'
 
 // import configureStore from '../redux/store'
 import Navigator from './navigator/navigator.container'

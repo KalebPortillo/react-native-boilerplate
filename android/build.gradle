@@ -2,6 +2,14 @@
 import groovy.json.JsonSlurper
 
 buildscript {
+    ext {
+        buildToolsVersion = "28.0.2"
+        minSdkVersion = 21
+        compileSdkVersion = 27
+        targetSdkVersion = 26
+        supportLibVersion = "27.1.1"
+    }
+
     repositories {
         jcenter()
         google()
@@ -32,6 +40,15 @@ subprojects {
         versionMajor = npmVersion[0]
         versionMinor = npmVersion[1]
         versionPatch = npmVersion[2]
+    }
+
+    afterEvaluate {project ->
+        if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion rootProject.ext.compileSdkVersion
+                buildToolsVersion rootProject.ext.buildToolsVersion
+            }
+        }
     }
 }
 

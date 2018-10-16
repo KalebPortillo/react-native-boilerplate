@@ -1,8 +1,8 @@
 import { StackNavigator } from 'react-navigation'
 import { Easing, Animated } from 'react-native'
 
-import Home from 'modules/home/home.view'
-import Counter from 'modules/counter/counter.container'
+import Home from '../home/home.view'
+import Counter from '../counter/counter.container'
 
 const transitionConfig = () => ({
   transitionSpec: {

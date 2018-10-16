@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import CounterReducer from 'modules/counter/counter.state'
-import NavigatorReducer from 'modules/navigator/navigator.state'
+import CounterReducer from '../modules/counter/counter.state'
+import NavigatorReducer from '../modules/navigator/navigator.state'
 // ## Generator Reducer Imports
 
 export const reducers = {
