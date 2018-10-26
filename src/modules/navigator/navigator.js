@@ -1,4 +1,4 @@
-import { StackNavigator } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation'
 import { Easing, Animated } from 'react-native'
 
 import Home from '../home/home.view'
@@ -27,7 +27,7 @@ const transitionConfig = () => ({
 })
 
 // Root navigator is a StackNavigator
-const Navigator = StackNavigator(
+const Navigator = createStackNavigator(
   {
     Home: { screen: Home },
     Counter: { screen: Counter }

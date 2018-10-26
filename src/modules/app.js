@@ -8,7 +8,8 @@ import { Colors } from '../theme'
 import { Loader } from '../components'
 
 // import configureStore from '../redux/store'
-import Navigator from './navigator/navigator.container'
+import Navigator from './navigator/navigator'
+import NavigationService from './navigator/navigator.service'
 
 // const { store, persistor } = configureStore()
 type Props = {
@@ -23,7 +24,11 @@ export default class App extends Component<Props> {
     return (
       <PersistGate persistor={this.props.persistor} loading={<Loader />}>
         <StatusBar backgroundColor={Colors.transparent} barStyle="light-content" translucent />
-        <Navigator />
+        <Navigator
+          ref={navigatorRef => {
+            NavigationService.setTopLevelNavigator(navigatorRef)
+          }}
+        />
       </PersistGate>
     )
   }

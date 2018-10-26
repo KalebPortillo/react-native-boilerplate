@@ -24,6 +24,7 @@ class CounterView extends Component<Props> {
   }
 
   render() {
+    console.log('PROPS', this.props)
     return (
       <View style={styles.container}>
         <TouchableOpacity
