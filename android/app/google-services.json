@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "259439281823",
+    "firebase_url": "https://boilerplate-e0211.firebaseio.com",
+    "project_id": "boilerplate-e0211",
+    "storage_bucket": "boilerplate-e0211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259439281823:android:a7604bc2211ff8b3",
+        "android_client_info": {
+          "package_name": "com.ferreri.boilerplate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259439281823-8dqm2fkbl54t2mnfn1o4rljfrlenvohm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuIe9EnChkmYd2gEuaLUcJyAG_tkOWK0s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
