@@ -1,9 +1,9 @@
 import React from 'react'
-import { Platform, StyleSheet, Text, View, Image } from 'react-native'
+import { Platform, Text, View, Image } from 'react-native'
 
 import Config from 'react-native-config'
 
-import { AwesomeButton } from '../../components'
+import { Button } from '../../components'
 import { Colors, Metrics, Fonts, Strings, Media, AppStyles } from '../../theme'
 
 const instructions = Platform.select({
@@ -22,11 +22,11 @@ export default (props: Props) => (
     <Text style={styles.instructions}>To get started, edit App.js</Text>
     <Text style={styles.instructions}>{instructions}</Text>
     <Text style={styles.instructions}>{`${Config.API_URL} / ${Config.GOOGLE_MAPS_API_KEY}`}</Text>
-    <AwesomeButton text={Strings.common.button} onPress={() => props.navigation.push('Counter')} />
+    <Button text={Strings.common.button} onPress={() => props.navigation.push('Counter')} />
   </View>
 )
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     flex: 1,
     ...AppStyles.centerChild,
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
     color: Colors.frost,
     marginBottom: Metrics.baseMargin
   }
-})
+}

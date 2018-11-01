@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { shallow } from 'enzyme'
-import AwesomeButton from '../awesome-button'
+import Button from './button'
 
-describe('<AwesomeButton>', () => {
+describe('<Button>', () => {
   const sampleText = 'test'
-  const Component = <AwesomeButton text={sampleText} onPress={() => {}} />
+  const Component = <Button text={sampleText} onPress={() => {}} />
 
   describe('Structure', () => {
     it('renders correctly', () => {

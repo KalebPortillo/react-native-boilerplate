@@ -20,9 +20,9 @@ Loader.defaultProps = {
   size: 'large'
 }
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
-    ...StyleSheet.absoluteFillObject,
+    ...AppStyles,
     ...AppStyles.centerChild
   }
-})
+}

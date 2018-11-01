@@ -46,6 +46,7 @@ export default {
       color: Colors.text
     }
   },
+  absoluteFill: {},
   centerChild: {
     justifyContent: 'center',
     alignItems: 'center'

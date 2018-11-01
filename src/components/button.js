@@ -9,7 +9,7 @@ type Props = {
   textStyle?: number | Object | Array<number>
 }
 
-export default function AwesomeButton(props: Props) {
+export default function Button(props: Props) {
   return (
     <TouchableOpacity onPress={props.onPress} style={[styles.container, props.style]}>
       <Text style={[styles.text, props.textStyle]}>{props.text.toUpperCase()}</Text>
@@ -17,7 +17,7 @@ export default function AwesomeButton(props: Props) {
   )
 }
 
-AwesomeButton.defaultProps = {
+Button.defaultProps = {
   style: undefined,
   textStyle: undefined
 }

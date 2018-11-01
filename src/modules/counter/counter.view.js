@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { StyleSheet, TouchableOpacity, Text, View } from 'react-native'
+import { TouchableOpacity, Text, View } from 'react-native'
 
 import { AppStyles, Colors, Fonts, Metrics } from '../../theme'
-import { AwesomeButton } from '../../components'
+import { Button } from '../../components'
 
 type Props = {
   navigation: Object,
@@ -10,7 +10,7 @@ type Props = {
   reset: Function,
   counter: number
 }
-class CounterView extends Component<Props> {
+export default class CounterView extends Component<Props> {
   increment = () => {
     this.props.increment()
   }
@@ -24,7 +24,6 @@ class CounterView extends Component<Props> {
   }
 
   render() {
-    console.log('PROPS', this.props)
     return (
       <View style={styles.container}>
         <TouchableOpacity
@@ -35,14 +34,14 @@ class CounterView extends Component<Props> {
           <Text style={styles.counter}>{this.props.counter}</Text>
         </TouchableOpacity>
 
-        <AwesomeButton text="Reset" onPress={this.reset} style={styles.linkButton} />
-        <AwesomeButton text="Go Back" onPress={this.bored} />
+        <Button text="Reset" onPress={this.reset} style={styles.linkButton} />
+        <Button text="Go Back" onPress={this.bored} />
       </View>
     )
   }
 }
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     flex: 1,
     ...AppStyles.centerChild,
@@ -63,6 +62,4 @@ const styles = StyleSheet.create({
   linkButton: {
     marginBottom: Metrics.baseMargin
   }
-})
-
-export default CounterView
+}
