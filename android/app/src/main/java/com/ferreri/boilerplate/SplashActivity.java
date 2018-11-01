@@ -1,4 +1,4 @@
-package com.boilerplate;
+package com.ferreri.boilerplate;
 
 import android.content.Intent;
 import android.os.Bundle;

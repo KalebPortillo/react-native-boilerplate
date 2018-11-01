@@ -1,5 +1,5 @@
 import React from 'react'
-import { ActivityIndicator, StyleSheet, View } from 'react-native'
+import { ActivityIndicator, View } from 'react-native'
 import { Colors, AppStyles } from '../theme'
 
 type Props = {
@@ -22,7 +22,7 @@ Loader.defaultProps = {
 
 const styles = {
   container: {
-    ...AppStyles,
+    ...AppStyles.absoluteFill,
     ...AppStyles.centerChild
   }
 }

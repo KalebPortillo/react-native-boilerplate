@@ -1,4 +1,4 @@
-package com.boilerplate;
+package com.ferreri.boilerplate;
 
 import android.os.Bundle;
 
